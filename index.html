@@ -113,6 +113,12 @@
           "<p>Ingrese una superficie válida.</p>";
         return;
       }
+        
+      if(isNaN(m2) || m2 <= 600) {
+          document.getElementById("resultado-trbd").innerHTML =
+          "<p>No requiere PVEA</p>";
+        return;
+      }
       const FOS = 0.9;
       const FOT = 7;
       const PVEA = 0.5;/*porcenteja en decimal*/
